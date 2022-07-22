@@ -1,0 +1,74 @@
+Day-8
+--------
+soapui
+
+Advantages
+----------
+1) Functional testing
+2) Security testing
+3) Performance/Load testing
+4) Supports both SOAP & Rest services
+
+SOAPUI Pro -Licensed
+SOAPUI opensource(community)
+
+How to install SOAPUI
+-------------
+Downlaod Link: https://www.soapui.org/downloads/soapui.html
+
+SoapUI Pro (ReadyAPI) --Trail (Licensed)
+SoapUI Opensource --Fre
+
+VERSION: 5.5.0
+
+
+1) Create a SOAP Project, Test Suite, Test Case
+
+WSDL:Web Service Description Language (xml)
+
+Wizdler plugin for chrom browser ---> show you webservicesAPIs i nthe WSDL document.
+
+SOAP Services (WSDL)
+http://www.dneonline.com/calculator.asmx?wsdl
+http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?wsdl
+
+
+-> Create SOAP Project using WSDL
+-> Create test suite & Test cases
+-> Added contains assertion
+-> Execute tests in sequence & parallel
+-> Documentation
+
+
+2) Create a Rest Project, Test Suite, Test Case
+
+WADL : Web Application Description Language( URL)
+
+	https://restcountries.eu/rest/v2/all
+
+
+-> Create Rest Project using URL(WADL)
+-> Create test suite & Test cases
+-> Added contains assertion
+-> Execute tests in sequence & parallel
+-> Documentation
+
+
+Assigment
+-------------
+SOAP Services
+https://www.dataaccess.com/webservicesserver/NumberConversion.wso?WSDL
+https://www.dataaccess.com/webservicesserver/TextCasing.wso?WSDL
+https://footballpool.dataaccess.eu/info.wso?WSDL
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "d38d772e-ad82-48b7-a6c8-ba148fa8803f",
+		"name": "FBCollections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post a message in Facebook Page",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v3.1/503503553031181/feed?message=This%20is%20Test%20message!!!!!!!!!!&access_token=EAAfs7qqyVycBAHDyl7Q34IXNLwht4ZB2tMz0yukZCiqrZAU5ZA9O5hhVOqV8mehZCPa5SLWpOZAJCZCn5lDZChJe4GVSYq9qYXi2yxAi50Eow28iBZAhjiaVzqPAvrAI5BHgpGYoPXaQGBKrYe1JxDIkUYemytmqX6wvzWZAdOuih6QAJtD63n6TZCeZBTRBOoBqvLIZD",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"503503553031181",
+						"feed"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "This%20is%20Test%20message!!!!!!!!!!"
+						},
+						{
+							"key": "access_token",
+							"value": "EAAfs7qqyVycBAHDyl7Q34IXNLwht4ZB2tMz0yukZCiqrZAU5ZA9O5hhVOqV8mehZCPa5SLWpOZAJCZCn5lDZChJe4GVSYq9qYXi2yxAi50Eow28iBZAhjiaVzqPAvrAI5BHgpGYoPXaQGBKrYe1JxDIkUYemytmqX6wvzWZAdOuih6QAJtD63n6TZCeZBTRBOoBqvLIZD"
+						}
+					]
+				},
+				"description": "Post a message in Facebook Page"
+			},
+			"response": []
+		},
+		{
+			"name": "Get  posted message from Facebook Page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v3.1/503503553031181_1879786498736206?access_token=EAAfs7qqyVycBAHDyl7Q34IXNLwht4ZB2tMz0yukZCiqrZAU5ZA9O5hhVOqV8mehZCPa5SLWpOZAJCZCn5lDZChJe4GVSYq9qYXi2yxAi50Eow28iBZAhjiaVzqPAvrAI5BHgpGYoPXaQGBKrYe1JxDIkUYemytmqX6wvzWZAdOuih6QAJtD63n6TZCeZBTRBOoBqvLIZD",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"503503553031181_1879786498736206"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAfs7qqyVycBAHDyl7Q34IXNLwht4ZB2tMz0yukZCiqrZAU5ZA9O5hhVOqV8mehZCPa5SLWpOZAJCZCn5lDZChJe4GVSYq9qYXi2yxAi50Eow28iBZAhjiaVzqPAvrAI5BHgpGYoPXaQGBKrYe1JxDIkUYemytmqX6wvzWZAdOuih6QAJtD63n6TZCeZBTRBOoBqvLIZD"
+						}
+					]
+				},
+				"description": "Post a message in Facebook Page"
+			},
+			"response": []
+		},
+		{
+			"name": "Post Comment to existing post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v3.1/503503553031181_1879786498736206?access_token=EAAfs7qqyVycBAHDyl7Q34IXNLwht4ZB2tMz0yukZCiqrZAU5ZA9O5hhVOqV8mehZCPa5SLWpOZAJCZCn5lDZChJe4GVSYq9qYXi2yxAi50Eow28iBZAhjiaVzqPAvrAI5BHgpGYoPXaQGBKrYe1JxDIkUYemytmqX6wvzWZAdOuih6QAJtD63n6TZCeZBTRBOoBqvLIZD",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"503503553031181_1879786498736206"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAfs7qqyVycBAHDyl7Q34IXNLwht4ZB2tMz0yukZCiqrZAU5ZA9O5hhVOqV8mehZCPa5SLWpOZAJCZCn5lDZChJe4GVSYq9qYXi2yxAi50Eow28iBZAhjiaVzqPAvrAI5BHgpGYoPXaQGBKrYe1JxDIkUYemytmqX6wvzWZAdOuih6QAJtD63n6TZCeZBTRBOoBqvLIZD"
+						}
+					]
+				},
+				"description": "Post a message in Facebook Page"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v3.1/1879786498736206_1879791172069072?access_token=EAAfs7qqyVycBAHDyl7Q34IXNLwht4ZB2tMz0yukZCiqrZAU5ZA9O5hhVOqV8mehZCPa5SLWpOZAJCZCn5lDZChJe4GVSYq9qYXi2yxAi50Eow28iBZAhjiaVzqPAvrAI5BHgpGYoPXaQGBKrYe1JxDIkUYemytmqX6wvzWZAdOuih6QAJtD63n6TZCeZBTRBOoBqvLIZD",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"1879786498736206_1879791172069072"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAfs7qqyVycBAHDyl7Q34IXNLwht4ZB2tMz0yukZCiqrZAU5ZA9O5hhVOqV8mehZCPa5SLWpOZAJCZCn5lDZChJe4GVSYq9qYXi2yxAi50Eow28iBZAhjiaVzqPAvrAI5BHgpGYoPXaQGBKrYe1JxDIkUYemytmqX6wvzWZAdOuih6QAJtD63n6TZCeZBTRBOoBqvLIZD"
+						}
+					]
+				},
+				"description": "Post a message in Facebook Page"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete post message",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v3.1/503503553031181_1879786498736206?access_token=EAAfs7qqyVycBAHDyl7Q34IXNLwht4ZB2tMz0yukZCiqrZAU5ZA9O5hhVOqV8mehZCPa5SLWpOZAJCZCn5lDZChJe4GVSYq9qYXi2yxAi50Eow28iBZAhjiaVzqPAvrAI5BHgpGYoPXaQGBKrYe1JxDIkUYemytmqX6wvzWZAdOuih6QAJtD63n6TZCeZBTRBOoBqvLIZD",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"503503553031181_1879786498736206"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAfs7qqyVycBAHDyl7Q34IXNLwht4ZB2tMz0yukZCiqrZAU5ZA9O5hhVOqV8mehZCPa5SLWpOZAJCZCn5lDZChJe4GVSYq9qYXi2yxAi50Eow28iBZAhjiaVzqPAvrAI5BHgpGYoPXaQGBKrYe1JxDIkUYemytmqX6wvzWZAdOuih6QAJtD63n6TZCeZBTRBOoBqvLIZD"
+						}
+					]
+				},
+				"description": "Post a message in Facebook Page"
+			},
+			"response": []
+		}
+	]
+}

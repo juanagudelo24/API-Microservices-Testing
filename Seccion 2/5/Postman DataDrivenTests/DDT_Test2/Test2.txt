@@ -1,0 +1,23 @@
+Test2
+---------
+URL: http://localhost:8085/student
+
+Request Type: POST
+
+Data format: Json
+
+Test Data : JSON, CSV
+
+Request Body:
+
+  {
+    "id": "{{id}}",
+    "firstName": "{{firstName}}",
+    "lastName": "{{lastName}}",
+    "email": "{{email}}",
+    "programme":"{{programme}}",
+     "courses": [
+      "Java",
+      "Selenium"
+    ]
+  }

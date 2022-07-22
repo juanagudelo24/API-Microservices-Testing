@@ -1,0 +1,86 @@
+Rest Assured Framework
+-----------
+
+How many ways we can execute framework/test cases
+-----------------
+1) TestNG.xml
+2) pom.xml
+3) Command prompt --> provied commands
+4) run.bat
+5) Jenkins
+
+pom.xml
+----------
+2 plug ins are required to execute project through pom.xml file
+	1) maven-compiler-plugin
+	2) maven-surefire plugin
+
+Execute test cases though command prompt:
+-----------------------------
+Pre-requisite: Maven software downlaod & install
+
+Maven
+-----
+	--> available as a plugin within eclispse
+	--> available as software on OS
+How to install Maven on windows os:
+-----
+1) downlaod Maven & Extract zip file
+http://mirrors.estointernet.in/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.zip
+
+2) Set Maven Path in Environment varaibles...
+
+3) Verify maven installed on windows or not
+
+Open command prompt:
+	cd C:\Users\admin\eclipse-workspace\RestassuredAPITesting_Employee_Project
+	mvn clean install
+
+Execute test cases using run.bat file
+-----------------------
+create run.bat file
+
+
+Execute test cases using Jenkins
+---------------------------------
+Downlad Jenkins: http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+
+open command prompt, go to file location:
+
+java -jar jenkins.war
+
+
+Phases
+-------
+1) Design & Development framework
+2) Execution
+3) Maintainace
+
+Git & Github
+----------------
+
+Step1: Sign up to Github repository & get the account
+Step2: Login to github
+Step3: Create a new repository
+	https://github.com/pavanoltraining/restassuredemployeeproject.git
+
+Step4:Cloning local git repository within eclipse using Github URL
+
+Step5: Add our project to local git repository
+
+	Rightclick-->Team-->Share Project-->Select local repository from dropdown-->Finish
+
+	Right click-->Add to Index
+	
+	Right clcik-->team-->commit
+
+Version Control system
+
+
+Github Repository URL: https://github.com/pavanoltraining/restassuredemployeeproject.git
+
+
+
+
+
+

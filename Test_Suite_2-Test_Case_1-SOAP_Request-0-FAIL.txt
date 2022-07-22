@@ -1,0 +1,50 @@
+Status: FAIL
+Time Taken: 1573
+Size: 314
+Timestamp: Tue Jul 05 14:40:31 COT 2022
+TestStep: SOAP Request
+
+----------------- Messages ------------------------------
+[Match content of [m:sISOCode]] The XPath Match assertion failed for the following path: [declare namespace m='https://footballpool.dataaccess.eu';
+//m:CountriesResponse[1]/m:CountriesResult[1]/m:tCountry[1]/m:sISOCode[1]/text()]. Expected value: [AR]; Actual value: [].
+
+----------------- Properties ------------------------------
+Endpoint: https://ws.footballpool.dataaccess.eu/info.wso
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : ""
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.2 (Java/17.0.2)
+Host : ws.footballpool.dataaccess.eu
+Accept-Encoding : gzip,deflate
+Content-Length : 307
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <foot:Countries>
+         <foot:sCountryName>Argentina</foot:sCountryName>
+      </foot:Countries>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : private, max-age=0
+Server : Microsoft-IIS/10.0
+Vary : Accept-Encoding
+Web-Service : DataFlex 20.0
+#status# : HTTP/1.1 200 OK
+Date : Tue, 05 Jul 2022 19:40:31 GMT
+Content-Type : text/xml; charset=utf-8
+
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <m:CountriesResponse xmlns:m="https://footballpool.dataaccess.eu">
+         <m:CountriesResult/>
+      </m:CountriesResponse>
+   </soap:Body>
+</soap:Envelope>

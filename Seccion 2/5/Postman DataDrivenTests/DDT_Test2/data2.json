@@ -1,0 +1,23 @@
+[
+  {
+    "id": 101,
+    "firstName": "xyz",
+    "lastName": "xyzxyz",
+    "email": "xyzxyz@risusDonecegestas.edu",
+    "programme": "Manger"
+  },
+  {
+    "id": 102,
+    "firstName": "abc",
+    "lastName": "abcabc",
+    "email": "abcabc@risusDonecegestas.edu",
+    "programme": "Developer"
+  },
+  {
+    "id": 103,
+    "firstName": "pqr",
+    "lastName": "pqrpqr",
+    "email": "pqrpqr@risusDonecegestas.edu",
+    "programme": "Engineer"
+  }  
+]

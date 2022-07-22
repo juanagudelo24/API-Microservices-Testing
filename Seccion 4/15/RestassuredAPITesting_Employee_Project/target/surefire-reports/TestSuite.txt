@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 34, Failures: 15, Errors: 0, Skipped: 0, Time elapsed: 23.821 s <<< FAILURE! - in TestSuite
+checkContentType(com.employeeapi.testCases.TC001_Get_All_Employees)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [application/json]
+	at com.employeeapi.testCases.TC001_Get_All_Employees.checkContentType(TC001_Get_All_Employees.java:103)
+
+checkserverType(com.employeeapi.testCases.TC001_Get_All_Employees)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [nginx/1.14.1] but found [nginx]
+	at com.employeeapi.testCases.TC001_Get_All_Employees.checkserverType(TC001_Get_All_Employees.java:113)
+
+checkContentType(com.employeeapi.testCases.TC002_Get_Single_Employee_Record)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [application/json]
+	at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkContentType(TC002_Get_Single_Employee_Record.java:79)
+
+checkserverType(com.employeeapi.testCases.TC002_Get_Single_Employee_Record)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [nginx/1.14.1] but found [nginx]
+	at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkserverType(TC002_Get_Single_Employee_Record.java:86)
+
+checkResposeBody(com.employeeapi.testCases.TC003_Post_Employee_Record)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.employeeapi.testCases.TC003_Post_Employee_Record.checkResposeBody(TC003_Post_Employee_Record.java:71)
+
+checkStatusCode(com.employeeapi.testCases.TC003_Post_Employee_Record)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [429]
+	at com.employeeapi.testCases.TC003_Post_Employee_Record.checkStatusCode(TC003_Post_Employee_Record.java:80)
+
+checkserverType(com.employeeapi.testCases.TC003_Post_Employee_Record)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: expected [nginx/1.14.1] but found [nginx]
+	at com.employeeapi.testCases.TC003_Post_Employee_Record.checkserverType(TC003_Post_Employee_Record.java:102)
+
+checkstatusLine(com.employeeapi.testCases.TC003_Post_Employee_Record)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 429 Too Many Requests]
+	at com.employeeapi.testCases.TC003_Post_Employee_Record.checkstatusLine(TC003_Post_Employee_Record.java:87)
+
+checkContentType(com.employeeapi.testCases.TC004_Put_Employee_Record)  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [application/json]
+	at com.employeeapi.testCases.TC004_Put_Employee_Record.checkContentType(TC004_Put_Employee_Record.java:95)
+
+checkcontentEncoding(com.employeeapi.testCases.TC004_Put_Employee_Record)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: expected [gzip] but found [null]
+	at com.employeeapi.testCases.TC004_Put_Employee_Record.checkcontentEncoding(TC004_Put_Employee_Record.java:109)
+
+checkserverType(com.employeeapi.testCases.TC004_Put_Employee_Record)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: expected [nginx/1.14.1] but found [nginx]
+	at com.employeeapi.testCases.TC004_Put_Employee_Record.checkserverType(TC004_Put_Employee_Record.java:102)
+
+checkContentType(com.employeeapi.testCases.TC005_Delete_Employee_Record)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [application/json]
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkContentType(TC005_Delete_Employee_Record.java:82)
+
+checkResposeBody(com.employeeapi.testCases.TC005_Delete_Employee_Record)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkResposeBody(TC005_Delete_Employee_Record.java:59)
+
+checkcontentEncoding(com.employeeapi.testCases.TC005_Delete_Employee_Record)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [gzip] but found [null]
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkcontentEncoding(TC005_Delete_Employee_Record.java:96)
+
+checkserverType(com.employeeapi.testCases.TC005_Delete_Employee_Record)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: expected [nginx/1.14.1] but found [nginx]
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkserverType(TC005_Delete_Employee_Record.java:89)
+

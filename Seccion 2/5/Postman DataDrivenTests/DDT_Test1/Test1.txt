@@ -1,0 +1,16 @@
+Test1
+---------
+URL: https://reqres.in/api/register
+
+Request Type: POST
+
+Data format: Json
+
+Test Data : JSON, CSV
+
+Request Body:
+
+{
+    "email": "{{email}}",
+    "password": "{{password}}"
+}

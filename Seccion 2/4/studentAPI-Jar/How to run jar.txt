@@ -1,0 +1,8 @@
+Copy jar file in C: drive
+
+Run below command
+C:\>java -jar  --add-modules java.xml.bind  studentApp.jar --server.port=8085
+
+Open App
+--------
+http://localhost:8085/student/list
