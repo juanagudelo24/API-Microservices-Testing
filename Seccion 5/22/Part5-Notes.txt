@@ -1,0 +1,11 @@
+API Testing using RestAssured
+BDD - Behavior Driven Development Approach
+--------------------------------------------
+
+1) Test Status Code
+2) Log Response
+3) Verifying Single content in response body
+4) Verifying Multiple contents in response body
+5) Setting parameters & headers
+
+---------------------------------------------
