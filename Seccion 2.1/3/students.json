@@ -1,0 +1,148 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "John",
+      "location": "india",
+      "phone": "1234567890",
+      "courses": [
+        "Java",
+        "Selenium"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Kim",
+      "location": "US",
+      "phone": "98876543213",
+      "courses": [
+        "Python",
+        "Appium"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Smith",
+      "location": "Canada",
+      "phone": "165498765",
+      "courses": [
+        "C#",
+        "RestAPI"
+      ]
+    },
+    {
+      "name": "Scott",
+      "location": "France",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "id": 4
+    },
+    {
+      "query": "\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ",
+      "id": 5
+    },
+    {
+      "name": "Scott",
+      "location": "France",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "id": 6
+    },
+    {
+      "name": "Scott",
+      "location": "France",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "id": 7
+    },
+    {
+      "name": "Scott",
+      "location": "France",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "id": 8
+    },
+    {
+      "name": "Scott",
+      "location": "France",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "id": 9
+    },
+    {
+      "name": "Scott",
+      "location": "France",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "id": 10
+    },
+    {
+      "name": "Scott",
+      "location": "France",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "id": 11
+    },
+    {
+      "name": "Scott",
+      "location": "France",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "id": 12
+    },
+    {
+      "name": "Scott",
+      "location": "France",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "id": 13
+    },
+    {
+      "name": "Scott",
+      "location": "France",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "id": 14
+    },
+    {
+      "name": "Scott",
+      "location": "France",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "id": 15
+    }
+  ]
+}

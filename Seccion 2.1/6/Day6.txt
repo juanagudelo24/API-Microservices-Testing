@@ -1,0 +1,30 @@
+Day-6
+------------
+Chaining of API's
+----
+Student API
+
+Gorest API
+----------------------
+url: https://gorest.co.in
+
+POST 					/public/v2/users	Create a new user
+GET 					/public/v2/users/1	Get user details
+PUT|PATCH 			/public/v2/users/1	Update user details
+DELETE 				/public/v2/users/1	Delete user
+
+Token: c35e10e748c6f113775527bcef204e9929b4c9f4b995a8ee253eec46aed57b06
+
+Request Body
+
+{
+"name": "scott",
+ "gender": "male",
+ "email": "abc@gmail.com",
+ "status": "inactive"
+}
+
+userid_env
+email_env
+name_env
+

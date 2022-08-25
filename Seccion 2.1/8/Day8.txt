@@ -1,0 +1,21 @@
+Day-8
+--------
+1) Upload file
+
+Post : http://localhost:8080/uploadFile
+Post: http://localhost:8080/uploadMultipleFiles
+
+Authentication types
+
+
+Swagger - interactive documentation
+cURL - Client URL
+
+
+curl -X GET "https://fakerestapi.azurewebsites.net/api/v1/Books" -H  "accept: text/plain; v=1.0"
+
+Swagger documents
+------------------------
+https://fakerestapi.azurewebsites.net/index.html
+https://petstore.swagger.io/
+https://httpbin.org/#/

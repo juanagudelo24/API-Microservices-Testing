@@ -1,0 +1,39 @@
+Day-4
+-------
+Response validations
+-------------
+Status code
+Headers
+Cookies
+Response time
+Response body
+
+Assertion - validation 
+
+pm  - library
+functions
+javascript
+
+Normal function
+Arrow function
+
+
+pm.test("Test Name", () =>
+						{
+ 						// assertion;
+						}
+);
+
+
+pm.test("Status code is 200", () => {
+ pm.response.to.have.status(200);
+});
+
+
+JSON Schema
+----------
+
+
+
+
+

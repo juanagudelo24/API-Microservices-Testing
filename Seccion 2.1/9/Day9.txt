@@ -1,0 +1,29 @@
+Day-9
+----------
+Petstore - 
+Json  
+XML
+
+https://petstore.swagger.io/
+
+Swagger - Exploring API request
+interactive document
+
+create documentation 
+publish it  
+
+published PetStore API's : 
+----------------
+https://documenter.getpostman.com/view/4924228/UzXNVdJS
+https://documenter.getpostman.com/view/4924228/UzXNVdNo
+
+E-Commerce application
+-----------------
+Install opencart app
+API user
+
+Opencart API Documentation: https://docs.opencart.com/en-gb/system/users/api/
+
+
+
+

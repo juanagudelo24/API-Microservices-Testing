@@ -1,0 +1,471 @@
+{
+	"info": {
+		"_postman_id": "aa281d1b-73da-48ee-80c7-3c48c4c7c8f0",
+		"name": "Authentications",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4924228"
+	},
+	"item": [
+		{
+			"name": "OAuth2.0_GitHubApp",
+			"item": [
+				{
+					"name": "Step1 - Request a user's GitHub identity",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://github.com/login/oauth/authorize?client_id=e2e76f497363a381720d",
+							"protocol": "https",
+							"host": [
+								"github",
+								"com"
+							],
+							"path": [
+								"login",
+								"oauth",
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "e2e76f497363a381720d"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step2 - Users are redirected back to your site by GitHub",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://github.com/login/oauth/access_token?client_id=e2e76f497363a381720d&client_secret=de2e61ebbf38910d3924fd84fbdc29c67ffbba91&code=52d4b5293dbd8ecbbcc5",
+							"protocol": "https",
+							"host": [
+								"github",
+								"com"
+							],
+							"path": [
+								"login",
+								"oauth",
+								"access_token"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "e2e76f497363a381720d"
+								},
+								{
+									"key": "client_secret",
+									"value": "de2e61ebbf38910d3924fd84fbdc29c67ffbba91"
+								},
+								{
+									"key": "code",
+									"value": "52d4b5293dbd8ecbbcc5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step3 - Use the access token to access the API -List Specific user",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "headerPrefix",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "http://localhost:8080/callback",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://localhost:8080",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "de2e61ebbf38910d3924fd84fbdc29c67ffbba91",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "e2e76f497363a381720d",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "myToken",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.github.com/users/mojombo",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"users",
+								"mojombo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Use the access token to access the API -List All users",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "headerPrefix",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "http://localhost:8080/callback",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://localhost:8080",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "de2e61ebbf38910d3924fd84fbdc29c67ffbba91",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "e2e76f497363a381720d",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "myToken",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.github.com/users",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BasicAuthentication",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "postman",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/basic-auth",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"basic-auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BasicAuth",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://the-internet.herokuapp.com/basic_auth",
+					"protocol": "http",
+					"host": [
+						"the-internet",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"basic_auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DigestAuth",
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "disableRetryRequest",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "postman",
+							"type": "string"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/digest-auth",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"digest-auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BearerTokenAuth_Github",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/user/repos",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"user",
+						"repos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "APIKeyAuth_openweathermap",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "appid",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "fe9c5cddb7e01d747b4611c3fc9eaf2c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast/daily?q=Delhi&units=metric&cnt=7",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast",
+						"daily"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Delhi"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "cnt",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

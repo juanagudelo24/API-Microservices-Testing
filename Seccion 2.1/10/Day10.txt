@@ -1,0 +1,65 @@
+Day-10
+-------
+Opencart Application API
+-----------------------
+
+ip = 134.56.78.90
+baseURL = http://{{ip}}/index.php?route=
+
+{{baseURL}}api/login
+{{baseURL}}api/shipping/address
+{{baseURL}}api/cart/add
+
+How many ways we can run collection
+------------------------------------
+Pre-requisite:    nodejs + npm
+
+2 components are required to run collection in command prompt and generate report
+---------------
+1) newman
+2) newman-reporter-html
+
+commands to install above components..
+
+npm install -g newman
+npm install -g newman-reporter-html
+
+
+Appraoch 1) run collection in command prompt ( local)
+--------------
+newman run Opencart_RestAPI_CartModule.postman_collection.json
+newman run Opencart_RestAPI_CartModule.postman_collection.json   -r html
+
+Appraoch 2) run the collection remotely using url.(remote)
+Shared URL: https://www.getpostman.com/collections/02078d0786a69a8fd7ec
+
+newman run https://www.getpostman.com/collections/02078d0786a69a8fd7ec   -r html
+
+Appraoch 2) Run the collection in jenkins( locally)
+
+
+Appraoch 3) Run the colelction in jenkins from Github
+
+Remote repo URL..
+https://github.com/pavanoltraining/opencart_API_testing.git
+
+
+1) Creaet local repo:
+	git init
+
+2) Connected local repo with remote repository(github)
+	git remote add origin https://github.com/pavanoltraining/opencart_API_testing.git
+
+3) add file to index/stage
+  git add filename
+
+4) git commit -m "comment" 
+
+5) git push origin master
+
+
+
+
+
+
+
